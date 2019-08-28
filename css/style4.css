@@ -1,0 +1,196 @@
+body{
+
+background-color: white;
+}
+
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+	cursor: default;
+}
+
+.ch-info-wrap, 
+.ch-info{
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+}
+
+.ch-info-wrap {
+	top: 20px;
+	left: 20px;
+	background: white;
+	box-shadow: 
+		0 0 0 20px rgba(255,255,255,0.2), 
+		inset 0 0 3px black;
+
+}
+
+.ch-info > div {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-position: center center;
+	
+	-webkit-backface-visibility: hidden; /*Just for webkit to have a smooth font*/
+}
+#he5{
+    
+   	text-align:center;
+    color: black;
+    font-size: 18px;
+}
+#he6{
+    
+   	text-align:center;
+    color: #2BA6E8;
+    font-size: 17px;
+}
+#he6:hover{
+    
+   	text-align:center;
+    color: #07418A;
+    font-size: 17px;
+}
+.ch-info .ch-info-front {
+	-webkit-transition: all 0.6s ease-in-out;
+	-moz-transition: all 0.6s ease-in-out;
+	-o-transition: all 0.6s ease-in-out;
+	-ms-transition: all 0.6s ease-in-out;
+	transition: all 0.6s ease-in-out;
+}
+
+.ch-info .ch-info-back {
+	opacity: 0;
+
+	background: black;
+	pointer-events: none;
+	
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	transform: scale(1.5);
+	
+	-webkit-transition: all 0.4s ease-in-out 0.2s;
+	-moz-transition: all 0.4s ease-in-out 0.2s;
+	-o-transition: all 0.4s ease-in-out 0.2s;
+	-ms-transition: all 0.4s ease-in-out 0.2s;
+	transition: all 0.4s ease-in-out 0.2s;
+}
+
+.ch-img-1 { 
+	background-image: url(../img-android/99.jpg);
+}
+
+.ch-img-2 { 
+	background-image: url(../img-android/100.jpg);
+}
+
+.ch-img-3 { 
+	background-image: url(../img-android/101.jpg);
+}
+
+.ch-img-4 { 
+	background-image: url(../img-android/102.jpg);
+}
+
+.ch-img-5 { 
+	background-image: url(../img-android/103.jpg);
+}
+
+.ch-img-6 { 
+	background-image: url(../img-android/104.jpg);
+}
+
+
+.ch-img-7 { 
+	background-image: url(../img-android/105.jpg);
+}
+
+.ch-img-8 { 
+	background-image: url(../img-android/106.jpg);
+}
+
+.ch-img-9 { 
+	background-image: url(../img-android/107.jpg);
+}
+
+
+.ch-img-10 { 
+	background-image: url(../img-android/108.jpg);
+}
+
+.ch-img-11 { 
+	background-image: url(../img-android/109.jpg);
+}
+
+.ch-img-12{ 
+	background-image: url(../img-android/110.jpg);
+}
+
+.ch-info h3 {
+	color:white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 18px;
+	margin: 0 15px;
+	padding: 40px 0 0 0;
+	height: 90px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+.ch-info p {
+	color: white;
+	padding: 10px 5px 0;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 12px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+}
+
+.ch-info p a {
+	display: block;
+	color: #A9A9A9;
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info p a:hover {
+	color: white;
+}
+
+.ch-item:hover .ch-info-front {
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	
+	opacity: 0;
+} 
+
+.ch-item:hover .ch-info-back {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	
+	opacity: 1;
+	pointer-events: auto;
+}
